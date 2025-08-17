@@ -1,0 +1,352 @@
+/* Fonts & Colors */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+  color: #333;
+}
+/* Brand name next to logo */
+.brand-name {
+  font-size: 1.5rem;          /* bigger for visibility */
+  font-weight: 700;
+  color: #000;                /* black text */
+  margin-left: 10px;          /* space from logo */
+  display: inline-block;
+  position: relative;
+  animation: glowSlide 2.5s ease-in-out infinite alternate;
+}
+
+  /* Center the subheading */
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #contact .subheading {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+
+/* Hero Logo above heading */
+.hero-logo {
+  width: 150px;          /* smaller, average size */
+  height: auto;         /* maintain aspect ratio */
+  display: block;
+  margin: 0 auto 15px;  /* center and add spacing below */
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #444;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #6a1b9a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #d81b60;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #6a1b9a;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background: #ab47bc;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact-section {
+  padding: 50px 20px;
+}
+
+.contact-card {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.contact-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-card button:hover {
+  opacity: 0.9;
+  
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #4CAF50, #00bcd4, #9c27b0);
+    background-size: 300% 300%;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+  }
+
+  .card h3, .card p {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+
+  .card:hover::before {
+    opacity: 0.15;
+    animation: gradientMove 3s infinite linear;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+/* Navbar base */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #4CAF50, #00bcd4, #9c27b0);
+    background-size: 300% 300%;
+    animation: gradientFlow 6s infinite linear;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* Logo styling */
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  /* Nav links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover underline animation */
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: #fff;
+    transition: 0.3s ease;
+    border-radius: 5px;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    color: #ffe082;
+    transform: scale(1.05);
+  }
+
+  /* Gradient animation */
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #d81b60;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
