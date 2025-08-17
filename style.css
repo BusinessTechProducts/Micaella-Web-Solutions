@@ -335,6 +335,25 @@ h1, h2, h3 {
 html {
   scroll-behavior: smooth;
 }
+/* Make nav links stack on smaller screens */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: flex;
+    flex-direction: column; /* stack links vertically */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .nav-links li a {
+    font-size: 14px; /* smaller font for mobile */
+    padding: 8px 10px;
+  }
+}
 
 .footer {
   background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
@@ -388,4 +407,5 @@ html {
   margin: 0;
   color: #fff;
 }
+
 
