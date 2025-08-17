@@ -5,6 +5,44 @@ body {
   background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
   color: #333;
 }
+/* Make text and layout adjust on small screens */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
+  }
+  .grid {
+    display: block;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .grid {
+    display: flex;
+    gap: 20px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Brand name next to logo */
 .brand-name {
   font-size: 1.5rem;          /* bigger for visibility */
@@ -350,3 +388,4 @@ html {
   margin: 0;
   color: #fff;
 }
+
